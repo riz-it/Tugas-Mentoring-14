@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'tugas_14',
+	'hostname' => 'sql.freedb.tech',
+	'username' => 'freedb_supersu',
+	'password' => 'ehBj&xfF9TXr29U',
+	'database' => 'freedb_tugas_14',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -90,7 +90,7 @@ $db['default'] = array(
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,
-	'stricton' => FALSE,
+	'stricton' => TRUE,
 	'failover' => array(),
 	'save_queries' => TRUE
 );

@@ -16,7 +16,7 @@
 
 
 -- Dumping database structure for tugas_15
-CREATE DATABASE IF NOT EXISTS `tugas_14` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `tugas_14` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `tugas_14`;
 
 -- Dumping structure for table tugas_15.categories
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `category_id` int NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
   PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table tugas_15.categories: ~2 rows (approximately)
 INSERT INTO `categories` (`category_id`, `category_name`) VALUES
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `data` blob NOT NULL,
   PRIMARY KEY (`id`),
   KEY `ci_sessions_timestamp` (`timestamp`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table tugas_15.ci_sessions: ~0 rows (approximately)
 
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   PRIMARY KEY (`product_id`),
   KEY `category_id` (`category_id`),
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table tugas_15.products: ~1 rows (approximately)
 INSERT INTO `products` (`product_id`, `product_name`, `category_id`, `price`, `quantity`, `description`, `created_at`, `updated_at`) VALUES
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `is_confirmed` tinyint unsigned NOT NULL DEFAULT '0',
   `is_deleted` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table tugas_15.users: ~2 rows (approximately)
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `avatar`, `created_at`, `updated_at`, `is_admin`, `is_confirmed`, `is_deleted`) VALUES
