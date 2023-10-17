@@ -184,7 +184,7 @@ class User extends REST_Controller {
 			}
 			
 			// user logout ok
-            $this->response(['Logout success!'], REST_Controller::HTTP_OK);
+            $this->response(['status'=> true, 'message' => 'Logout success!', 'data' => null], REST_Controller::HTTP_OK);
 			
 		} else {
 			
