@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "RESTAPI_JWT_CI",
-    "dateExported": "2023-10-17T02:38:42.718Z",
+    "dateExported": "2023-10-17T08:46:40.937Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "Register",
-            "url": "{{jwt_api_14}}/auth/register",
+            "url": "{{deploy_api}}/auth/register",
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-10-13T13:09:21.569Z",
-            "modified": "2023-10-17T02:38:04.985Z",
+            "modified": "2023-10-17T08:13:43.739Z",
             "headers": [],
             "params": [],
             "body": {
@@ -23,11 +23,11 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "newUser134"
+                        "value": "uadmin"
                     },
                     {
                         "name": "email",
-                        "value": "user1@examsdfple.com"
+                        "value": "uadmin@gmail.com"
                     },
                     {
                         "name": "password",
@@ -42,11 +42,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "Login",
-            "url": "{{jwt_api_14}}auth/login",
+            "url": "{{deploy_api}}/auth/login",
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-10-13T13:09:21.570Z",
-            "modified": "2023-10-17T00:45:04.163Z",
+            "modified": "2023-10-17T08:15:56.943Z",
             "headers": [],
             "params": [],
             "body": {
@@ -55,7 +55,7 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "newUser1"
+                        "value": "uadmin"
                     },
                     {
                         "name": "password",
@@ -70,11 +70,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "Logout",
-            "url": "{{jwt_api_14}}/auth/logout",
+            "url": "{{deploy_api}}/auth/logout",
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-10-13T13:09:21.571Z",
-            "modified": "2023-10-17T02:38:18.592Z",
+            "modified": "2023-10-17T08:21:34.707Z",
             "headers": [],
             "params": [],
             "body": {
@@ -83,7 +83,7 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "newUser1"
+                        "value": "uadmin"
                     },
                     {
                         "name": "password",
@@ -98,11 +98,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "ReGenerateToken",
-            "url": "{{jwt_api_14}}/auth/reGenToken",
+            "url": "{{deploy_api}}/auth/reGenToken",
             "method": "POST",
             "sortNum": 40000,
             "created": "2023-10-13T13:09:21.572Z",
-            "modified": "2023-10-17T02:38:27.774Z",
+            "modified": "2023-10-17T08:23:48.048Z",
             "headers": [],
             "params": [],
             "body": {
@@ -111,7 +111,7 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "newUser1"
+                        "value": "uadmin"
                     }
                 ]
             },
@@ -122,11 +122,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "insertProduct",
-            "url": "{{jwt_api_14}}/products",
+            "url": "{{deploy_api}}/products",
             "method": "POST",
             "sortNum": 50000,
             "created": "2023-10-13T13:09:21.573Z",
-            "modified": "2023-10-17T02:27:49.112Z",
+            "modified": "2023-10-17T08:23:57.744Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -141,7 +141,7 @@
             },
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA4ODczfQ.Ox_sr3KALcBVGVZHlxr7jcEcuJy8LxT8WjAIpmXoShA"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -150,11 +150,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "insertCategory",
-            "url": "{{jwt_api_14}}/categories",
+            "url": "{{deploy_api}}/categories",
             "method": "POST",
             "sortNum": 55000,
             "created": "2023-10-17T01:49:15.412Z",
-            "modified": "2023-10-17T01:59:40.987Z",
+            "modified": "2023-10-17T08:35:58.714Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -164,12 +164,12 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"category_name\" : \"Sambo\"\n}",
+                "raw": "{\n  \"category_name\" : \"Senjata\"\n}",
                 "form": []
             },
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA1MTgwfQ.VJfYhcZmkHLRKUKlrXxm4uojZxm9bmJb0M57RniaGhg"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -178,11 +178,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "getProduct",
-            "url": "{{jwt_api_14}}/products",
+            "url": "{{deploy_api}}/products",
             "method": "GET",
             "sortNum": 60000,
             "created": "2023-10-13T13:09:21.574Z",
-            "modified": "2023-10-17T02:14:47.051Z",
+            "modified": "2023-10-17T08:43:16.870Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -192,7 +192,7 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA4ODczfQ.Ox_sr3KALcBVGVZHlxr7jcEcuJy8LxT8WjAIpmXoShA"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -201,11 +201,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "getCategory",
-            "url": "{{jwt_api_14}}/categories",
+            "url": "{{deploy_api}}/categories",
             "method": "GET",
             "sortNum": 65000,
             "created": "2023-10-17T01:46:39.152Z",
-            "modified": "2023-10-17T02:14:54.306Z",
+            "modified": "2023-10-17T08:40:27.789Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -215,7 +215,7 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA4ODczfQ.Ox_sr3KALcBVGVZHlxr7jcEcuJy8LxT8WjAIpmXoShA"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -224,11 +224,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "findProduct",
-            "url": "{{jwt_api_14}}/products/1",
+            "url": "{{deploy_api}}/products/1",
             "method": "GET",
             "sortNum": 70000,
             "created": "2023-10-13T13:09:21.575Z",
-            "modified": "2023-10-17T02:28:10.964Z",
+            "modified": "2023-10-17T08:43:35.707Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -247,11 +247,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "findCategory",
-            "url": "{{jwt_api_14}}categories/1",
+            "url": "{{deploy_api}}categories/3",
             "method": "GET",
             "sortNum": 75000,
             "created": "2023-10-17T02:12:50.978Z",
-            "modified": "2023-10-17T02:14:59.946Z",
+            "modified": "2023-10-17T08:43:47.876Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -270,11 +270,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "updateProduct",
-            "url": "{{jwt_api_14}}/products/2",
+            "url": "{{deploy_api}}/products/2",
             "method": "PUT",
             "sortNum": 80000,
             "created": "2023-10-13T13:09:21.576Z",
-            "modified": "2023-10-17T02:35:55.184Z",
+            "modified": "2023-10-17T08:31:45.363Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -292,12 +292,12 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"product_name\" : \"yololyo\",\n  \"price\" : 5000,\n  \"category_id\" : 3,\n  \"quantity\" : 50\n}",
+                "raw": "{\n  \"product_name\" : \"Mainan\",\n  \"price\" : 5000,\n  \"category_id\" : 3,\n  \"quantity\" : 50\n}",
                 "form": []
             },
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA4ODczfQ.Ox_sr3KALcBVGVZHlxr7jcEcuJy8LxT8WjAIpmXoShA"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -306,11 +306,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "updateCategory",
-            "url": "{{jwt_api_14}}/categories/3",
+            "url": "{{deploy_api}}/categories/3",
             "method": "PUT",
             "sortNum": 85000,
             "created": "2023-10-17T02:08:20.624Z",
-            "modified": "2023-10-17T02:29:51.707Z",
+            "modified": "2023-10-17T08:43:59.733Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -342,11 +342,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "deleteProduct",
-            "url": "{{jwt_api_14}}/products/1",
+            "url": "{{deploy_api}}/products/2",
             "method": "DELETE",
             "sortNum": 90000,
             "created": "2023-10-13T13:09:21.577Z",
-            "modified": "2023-10-17T02:28:30.440Z",
+            "modified": "2023-10-17T08:33:03.928Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -356,7 +356,7 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA4ODczfQ.Ox_sr3KALcBVGVZHlxr7jcEcuJy8LxT8WjAIpmXoShA"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         },
@@ -365,11 +365,11 @@
             "colId": "9c99bf04-3308-42ae-ba8e-271704b3a682",
             "containerId": "",
             "name": "deleteCategory",
-            "url": "{{jwt_api_14}}/categories/5",
+            "url": "{{deploy_api}}/categories/7",
             "method": "DELETE",
             "sortNum": 100000,
             "created": "2023-10-17T02:00:01.619Z",
-            "modified": "2023-10-17T02:12:33.100Z",
+            "modified": "2023-10-17T08:44:11.399Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -379,7 +379,7 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJuZXdVc2VyMSIsIkFQSV9USU1FIjoxNjk3NTA1MTgwfQ.VJfYhcZmkHLRKUKlrXxm4uojZxm9bmJb0M57RniaGhg"
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI1IiwidXNlcm5hbWUiOiJ1YWRtaW4iLCJBUElfVElNRSI6MTY5NzUzMTAyOX0.8ddhEQCeZTnlIYhRieYUWHjugE25_X09GcA4jD7T8aM"
             },
             "tests": []
         }
