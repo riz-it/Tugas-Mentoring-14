@@ -44,7 +44,7 @@ class Category extends REST_Controller
     public function index_get($id = null)
     {
         $headers = $this->input->request_headers();
-
+        
         if (!isset($headers['Authorization'])) {
             $this->response(['status'=> false, 'message' => 'Autentikasi gagal.'], 400);
             return;
