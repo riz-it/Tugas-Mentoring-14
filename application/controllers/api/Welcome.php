@@ -21,7 +21,7 @@ class Welcome extends REST_Controller
             'status' => true,
             'message' => 'Welcome to REST API With JWT Token',
 			'author' => 'Mochamad Rizal Fachrudin',
-			'assignment' => 'Tugas Mentoring 14'
+			'assignment' => 'Tugas Mentoring 15'
         ];
         
         $this->response($array, REST_Controller::HTTP_OK); 

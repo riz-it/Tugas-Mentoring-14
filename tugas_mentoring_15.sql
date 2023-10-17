@@ -16,8 +16,8 @@
 
 
 -- Dumping database structure for tugas_15
-CREATE DATABASE IF NOT EXISTS `tugas_14` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `tugas_14`;
+CREATE DATABASE IF NOT EXISTS `tugas_15` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `tugas_15`;
 
 -- Dumping structure for table tugas_15.categories
 CREATE TABLE IF NOT EXISTS `categories` (
